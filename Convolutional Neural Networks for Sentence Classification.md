@@ -1,5 +1,5 @@
-#Convolutional Neural Networks for Sentence Classification
-
+Convolutional Neural Networks for Sentence Classification
+=
 *Yoon Kim* 
 
 [Paper]( https://arxiv.org/pdf/1408.5882v2.pdf)
