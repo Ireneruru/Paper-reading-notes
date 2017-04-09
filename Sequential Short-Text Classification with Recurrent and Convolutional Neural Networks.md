@@ -27,27 +27,35 @@ Two part model:
 	A given short text of length l :
 	![](./img/02representation.png)
 	+ RNN representation 
-	<img src="./img/02RNN.png"  width= "200">
+	<div align=center>
+	<img src="./img/02RNN.png"  width= "200" align="center">
+	</div>
 	+ CNN representation 
+	<div align=center>
 	<img src="./img/02CNN.png"  width= "200">
+	</div>
 	Then the max pooling.
 	
 2. Classify the current short text based on the vector representations of the current. 
 	![](./img/02classify.png)
 	The history size means the dimension cut by the two layers.
-	
+		
 	+ FF(feedward) + tanh equals to FF<sub>1</sub>
 	
-		<img src="./img/02FF1.png"  width= "200">	
+	<div align=center>
+		<img src="./img/02FF1.png"  width= "150">
+	</div>	
+	
 	+ FF + softmax
 	
-		<img src="./img/02FF2.png"  width= "150">	
+	<div align=center>
+		<img src="./img/02FF2.png"  width= "150">	</div>
 	
 3. Comparsion:
 
-
-	<img src="./img/02compare.png"  width= "400">
-
+	<div align=center>
+		<img src="./img/02compare.png"  width= "400">
+	</div>
 ## Accumulate
 
 * artificial neural networks (ANNs)
