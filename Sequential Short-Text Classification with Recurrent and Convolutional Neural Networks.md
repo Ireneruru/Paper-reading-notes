@@ -30,6 +30,7 @@ Two part model:
 	<div align=center>
 	<img src="./img/02RNN.png"  width= "200" align="center">
 	</div>
+	
 	+ CNN representation 
 	<div align=center>
 	<img src="./img/02CNN.png"  width= "200">
@@ -43,13 +44,13 @@ Two part model:
 	+ FF(feedward) + tanh equals to FF<sub>1</sub>
 	
 	<div align=center>
-		<img src="./img/02FF1.png"  width= "150">
+		<img src="./img/02FF1.png"  height= "50">
 	</div>	
 	
 	+ FF + softmax
 	
 	<div align=center>
-		<img src="./img/02FF2.png"  width= "150">	</div>
+		<img src="./img/02FF2.png"  height= "50">	</div>
 	
 3. Comparsion:
 
