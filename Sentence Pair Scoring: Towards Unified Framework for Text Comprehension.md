@@ -14,6 +14,7 @@
 + Answer Sentence Selection 
 
 	+ Evaluation: Mean Average Precision (MAP) and Mean Reciprocial Rank (MRR)
+	+ 
 	<img src="./img/04MRR.png", height=80>
 
 + Next Utterance Ranking
