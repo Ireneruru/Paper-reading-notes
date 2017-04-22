@@ -69,12 +69,12 @@ The classic academic standard stems from the TREC-based dataset originally by Wa
 | dos Santos (2016)        | |            |          | 0.753    | 0.851    | Attentive Pooling CNN; state-of-art 2016
 | Wang et al. (2016)       | |            |          | 0.771    | 0.845    | Lexical Decomposition and Composition; state-of-art 2016
 |--------------------------|-------------|----------|----------|----------|---------
-| avg                      | 20s/epoch  eta = 0.44 hr ||||| (defaults)
-|                          | ||||| 
-| DAN                      | 28s/epoch eta = 0.62 hr ||||| ``inp_e_dropout=`` ``inp_w_dropout=1/3`` ``deep=2`` ``pact='relu'``
-|                          | |||||
+| avg                      |4s/epoch| 0.819778    | 0.869590 | 0.658770 | 0.751929 | (defaults)
+|                          ||±0.005699    |±0.006494 |±0.007244 |±0.009579 |
+| DAN.                     ||0.819778    | 0.869590 | 0.658770 | 0.751929 | ``inp_e_dropout=`` ``inp_w_dropout=1/3`` ``deep=2`` ``pact='relu'``
+|                          ||±0.005699    |±0.006494 |±0.007244 |±0.009579 |
 |--------------------------|-------------|----------|----------|----------|---------
-| rnn                      | 2100s/epoch eta = 46.66 hr ||||| (defaults)
+| rnn                      | 22s/epoch ||||| (defaults)
 |                          | |||||
 | cnn                      | 26138s/epoch eta = 580hr ||||| (defaults)
 |                          | |||||
