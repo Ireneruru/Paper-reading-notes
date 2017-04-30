@@ -84,9 +84,10 @@ These results are obtained like this:
 |                          || ±0.021650    |±0.027517 |±0.009387 |±0.021668 |
 | rnncnn                   |25s/epoch No.418051f821c1305a| 0.216062    | 0.262839 | 0.168569 | 0.235880 | (defaults)
 |                          ||±0.008533    |±0.018333 |±0.004758 |±0.011267 |
-| attn1511                 |24s/epoch No.70372584be6cbee8 |
+| attn1511                 |24s/epoch No.70372584be6cbee8 | 0.419845    | 0.455612 | 0.270850 | 0.471062 | (defaults)
+|                          ||±0.013729    |±0.010906 |±0.005727 |±0.012687 |
 |--------------------------|-------------|-------------|----------|----------|----------|---------
-| rnn                      |||--------------------------|-------------|-------------|----------|----------|----------|---------
+| rnn                    | Ubuntu transfer learning (``ptscorer=B.dot_ptscorer`` ``pdim=1`` ``inp_e_dropout=0`` ``dropout=0`` ``balance_class=True`` ``adapt_ubuntu=True`` ``vocabt='ubuntu'`` ``opt='rmsprop'``)
 | avg + BM25               || 0.523084    | 0.488757 | 0.258400 | 0.462038 |
 |                          || ±0.016611    |±0.006357 |±0.003675 |±0.010558 |
 | DAN + BM25               || 0.532890    | 0.505769 | 0.269900 | 0.486230 | ``inp_e_dropout=0`` ``inp_w_dropout=1/3`` ``deep=2`` ``pact='relu'``
@@ -162,7 +163,7 @@ BM25 results are obtained with:
 Transfer learning has been performed like this:
 
 	tools/transfer.py rnn ubuntu data/anssel/ubuntu/v2-vocab.pickle ubu-weights-rnn--23fa2eff7cda310d-bestval.h5 anssel data/anssel/yodaqa/curatedv2-training.csv data/anssel/yodaqa/curatedv2-val.csv pdim=1 ptscorer=B.dot_ptscorer dropout=0 inp_e_dropout=0 balance_class=True adapt_ubuntu=True "opt='rmsprop'" nb_runs=16
-		tools/eval.py rnn anssel data/anssel/yodaqa/curatedv2-training.csv data/anssel/yodaqa/curatedv2-val.csv data/anssel/yodaqa/curatedv2-test.csv weights-ubuntu-anssel-rnn-1cd9ebbf9c99f926-*-bestval.h5 "vocabf='data/anssel/ubuntu/v2-vocab.pickle'" "vocabt='ubuntu'" pdim=1 ptscorer=B.dot_ptscorer inp_e_dropout=0 dropout=0 balance_class=True adapt_ubuntu=True "opt='rmsprop'"
+	tools/eval.py rnn anssel data/anssel/yodaqa/curatedv2-training.csv data/anssel/yodaqa/curatedv2-val.csv data/anssel/yodaqa/curatedv2-test.csv weights-ubuntu-anssel-rnn-1cd9ebbf9c99f926-*-bestval.h5 "vocabf='data/anssel/ubuntu/v2-vocab.pickle'" "vocabt='ubuntu'" pdim=1 ptscorer=B.dot_ptscorer inp_e_dropout=0 dropout=0 balance_class=True adapt_ubuntu=True "opt='rmsprop'"
 
 where the ubu-weights model can be downloaded from
 
